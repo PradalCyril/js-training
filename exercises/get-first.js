@@ -8,7 +8,14 @@
  */
 
 // Your code :
-
+function getFirst(a){
+    if (typeof a == "string"){
+        
+        return a.substr(0,1);
+    }else {
+        return a[0];
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

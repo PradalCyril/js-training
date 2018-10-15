@@ -10,6 +10,13 @@
  */
 
 // Your code :
+function abs(math){
+    
+    if (math<0){
+        math=math+(2*-math);
+    }
+    return (math);
+}
 
 //* Begin of tests
 const assert = require('assert')

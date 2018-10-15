@@ -8,9 +8,13 @@
  */
 
 // Your code :
-
+var circular={};
+circular.circular=circular;
 //* Begin of tests
 const assert = require('assert')
+
+console.log(typeof circular);
+
 
 assert.strictEqual(typeof circular, 'object')
 assert.strictEqual(circular.circular, circular)
