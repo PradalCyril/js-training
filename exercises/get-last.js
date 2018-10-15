@@ -8,7 +8,15 @@
  */
 
 // Your code :
-
+function getLast(a){
+    if (typeof a == "string"){
+        
+        return a.substr(a.length-1,a.length);
+    }else {
+        let coucou = a.length-1;
+        return a[coucou];
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 

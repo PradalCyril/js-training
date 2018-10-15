@@ -9,7 +9,26 @@
  */
 
 // Your code :
+function multiply(a,b){
+    let tot=0; 
+    let i=0;
+    if (b>0){
+    while (i<b){
+        tot=tot+a
+        i=i+1;
+    }return tot;
+    }else{
+        while (i>b){
+            tot=tot+a
+            i=i-1;
+    }
+return -tot;
+}
 
+
+
+
+}
 //* Begin of tests
 const assert = require('assert')
 

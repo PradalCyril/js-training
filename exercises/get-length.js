@@ -8,7 +8,15 @@
  */
 
 // Your code :
-
+function getLength(a){
+    if (typeof a == "string"){
+        
+        return a.length;
+    }else {
+        
+        return a.length;
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
