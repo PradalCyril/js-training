@@ -9,22 +9,32 @@
  */
 
 // Your code :
-function multiply(a,b){
-    let tot=0; 
-    let i=0;
-    if (b>0){
-    while (i<b){
-        tot=tot+a
-        i=i+1;
-    }return tot;
-    }else{
-        while (i>b){
-            tot=tot+a
-            i=i-1;
+function multiply (x, y){
+    let somme = 0;
+    if(x > 0 && y > 0){
+    for(let i = 0; i < x; i++){
+    somme = somme + y;
     }
-return -tot;
-}
-
+    }
+    else if(x < 0 && y > 0){
+    for(let i = 0; i < y; i++){
+    somme = somme + x;
+    }
+    }
+    else if(x < 0 && y < 0){
+    for(let i = 0; i > x; i--){
+    somme = somme - y;
+    }
+    }
+    else if(x > 0 && y < 0){
+    for(let i = 0; i < x; i++){
+    somme = somme + y;
+    }
+    }
+    else{
+    return(0);
+    }
+    return(somme);
 
 
 
