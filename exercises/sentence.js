@@ -6,6 +6,18 @@
  *
  */
 
+function sentence(a){
+    let resultat=''
+    for(let i=0;i<a.length;i++){
+        if (i==a.length-1){
+            resultat=resultat+a[i];
+        }else{
+            resultat= resultat + a[i]+" ";
+        }
+        
+    }
+    return resultat;
+}
 
 //* Begin of tests
 const assert = require('assert')

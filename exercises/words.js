@@ -5,7 +5,22 @@
  * and return an array of each words using space as a delimiter
  *
  */
-
+function words(a){
+        let resultat="";
+        let b=[];
+        
+        for (let i =0;i<a.length;i++){
+            if(a[i]!==" "){
+                resultat= resultat + a[i];
+                
+                console.log('resultat= '+ resultat)
+            }
+            b.push(resultat);
+            resultat="";
+            console.log('b= '+b)
+        }
+        return b
+}
 
 //* Begin of tests
 const assert = require('assert')

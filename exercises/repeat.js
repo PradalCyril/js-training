@@ -7,7 +7,13 @@
  * Of course you may not use the method directly
  *
  */
-
+function repeat(a,b){
+    var tot=""
+    for (let i=0;i<b;i++){
+        tot=tot+a;
+    }
+    return tot
+}
 //* Begin of tests
 const assert = require('assert')
 
