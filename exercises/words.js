@@ -6,18 +6,16 @@
  *
  */
 function words(a){
-        let resultat="";
         let b=[];
+        var words=a.split(' ');
         
         for (let i =0;i<a.length;i++){
-            if(a[i]!==" "){
-                resultat= resultat + a[i];
-                
-                console.log('resultat= '+ resultat)
-            }
-            b.push(resultat);
-            resultat="";
-            console.log('b= '+b)
+            
+            if (words[i]!==undefined){
+                b.push(words[i]);
+            }else{
+                console.log("no")
+            } 
         }
         return b
 }

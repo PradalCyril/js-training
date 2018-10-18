@@ -9,7 +9,52 @@
  * @notions Primitive and Operators, Functions, Recursion
  */
 
-// Your code :
+// Your code:
+let somme = 0;
+let count=0;
+function multiply(x,y){
+    if (count==0){
+        somme = 0;
+    }
+    if (count!=y){
+        if(x > 0 && y > 0){
+            somme = somme + x;
+            count += 1;
+            
+            
+            multiply(x,y);
+            
+        }
+        else if(x < 0 && y > 0){
+            somme = somme + x;
+            count+=1;
+            
+            multiply(x,y);
+            
+        }
+        else if(x < 0 && y < 0){
+            somme = somme - x;
+            count -= 1;
+            
+            multiply(x,y);
+            
+        }
+        else if(x > 0 && y < 0){
+            somme = somme - x;
+            count -= 1;
+            
+            multiply(x,y);
+            
+        }
+        else if(x==0 || y==0){
+            return(0);
+            
+        }
+    }else{
+        count=0;
+    }
+    return(somme);
+}
 
 //* Begin of tests
 const assert = require('assert')
